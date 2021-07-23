@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây Dựng Lớp Mô Tả Điện Thoại</title>
+</head>
+<style>
+    table, tr, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+<div>
+    <div style="float: left;">
+        <h3>Nokia fake</h3>
+        <button onclick="statusMobileNokia()">Status</button>
+        <button onclick="toggleMobileNokia()">ON/OFF</button>
+        <button id="nokia" onclick="chargeMobileNokia()" value="1">Xac Pin</button>
+        <br> <br>
+        <textarea cols="30" rows="10" id="textN"></textarea>
+        <span id="listSendN"></span> <br>
+        <span id="listNokia"></span> <br> <br>
+        <button onclick="sendNokia()">Send</button>
+        <button onclick="inboxIphoneF()">Hop Thu Den</button>
+        <button onclick="messengerPhoneNF()">Tin Da Gui</button>
+    </div>
+
+    <div style="float: right; width: 50%">
+        <h3>iphone fake</h3>
+        <button onclick="statusMobileIphone()">Status</button>
+        <button onclick="toggleMobileIphone()">ON/OFF</button>
+        <button onclick="chargeMobileIphone()">Xac Pin</button>
+        <br> <br>
+        <textarea cols="30" rows="10" id="textI"></textarea>
+        <span id="listSendI"></span> <br>
+        <span id="listIphone"></span> <br>
+        <button onclick="sendIphone()">Send</button>
+        <button onclick="inboxNokiaF()">Hop Thu Den</button>
+        <button onclick="messengerPhoneIF()">Tin Da Gui</button>
+        <br> <br>
+    </div>
+</div>
+<script src="mobile.js"></script>
+</body>
+</html>
